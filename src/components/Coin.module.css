@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  font-size: 12px;
+  color: #212529;
+  width: 85%;
+  direction: rtl;
+  border-bottom: 1px solid #e6e8ea;
+  background-color: #ffffff;
+}
+
+.container:last-child {
+  border: none;
+}
+
+.image {
+  width: 45px;
+}
+
+.name {
+  width: 140px;
+  font-size: 20px;
+  margin-right: 15px;
+  text-align: right;
+  font-weight: bold;
+  color: #333333;
+}
+
+.symbol {
+  text-align: right;
+  width: 100px;
+}
+
+.currentPrice {
+  text-align: right;
+  width: 100px;
+  font-family: iransansmedium;
+  font-size: 16px;
+}
+
+.greenPriceChange,
+.redPriceChange {
+  width: 100px;
+  text-align: left;
+  font-weight: bold;
+  font-family: iransansmedium;
+  font-size: 14px;
+}
+
+.redPriceChange {
+  color: rgb(255, 38, 38);
+}
+
+.greenPriceChange {
+  color: rgb(0, 204, 0);
+}
+
+
+.container a {
+  text-decoration: none;
+  padding: 10px 20px;
+  width: fit-content;
+  background: rgb(230, 232, 234);
+  border-radius: 4px;
+  color: #333;
+  font-weight: 500;
+  margin-right: 50px;
+  text-align: center;
+  font-family: 'iransansmedium';
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.container a:hover {
+  background: #3246fc ;
+  color: #fff;
+}

@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "iransansmedium";
+  font-weight: 800;
+  font-style: normal;
+  src: url("assets/fonts/IRANSansWeb_Medium.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "iransanscoo";
+  font-weight: 300;
+  font-style: normal;
+  src: url("assets/fonts/IRANSansWeb_Medium.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "iransanslight";
+  font-weight: 500;
+  font-style: normal;
+  src: url("assets/fonts/IRANSansWeb_Light.woff2") format("woff");
+}
+
+.App {
+  text-align: center;
+}
+
+#root{
+  text-align: center;
+  background: #eee;
+  
+}
+h1 {
+  font-family: 'iransanscoo';
+  color: #7158e2;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

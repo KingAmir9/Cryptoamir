@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgb(198 198 189);
+    flex-direction: column-reverse;
+    align-content: space-around;
+    align-items: center;
+    padding: 18px;
+    margin-bottom: 20px;
+
+}
+
+
+.container a {
+    color: #619fff;
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
