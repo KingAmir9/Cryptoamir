@@ -20,7 +20,7 @@ const Coin = ({id,name, name_fa, image, symbol, price, marketCap, priceChange24 
             <span className={styles.currentPrice}><span></span>{parseInt(price).toLocaleString()} </span>
             <span className={priceChange24 > 0 ? styles.greenPriceChange : styles.redPriceChange} >{priceChange24.toFixed(2)}</span>
             {/* <span className={styles.marketCap} >$ {marketCap.toLocaleString()}</span> */}
-            <a href='#' className={styles.btnprice}>خرید / فروش</a>
+            <Link to={`/coins/${id}`} className={styles.btnprice}> خرید / فروش </Link>
         </div>
 
     </>
