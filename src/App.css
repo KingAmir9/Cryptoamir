@@ -25,12 +25,17 @@
 
 #root{
   text-align: center;
-  background: #eee;
+  background: #f2f3f5;
+  
   
 }
 h1 {
   font-family: 'iransanscoo';
   color: #7158e2;
+  margin: 0;
+  padding-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
 }
 .App-logo {
   height: 40vmin;

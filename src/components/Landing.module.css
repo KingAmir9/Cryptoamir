@@ -1,36 +1,13 @@
-.coinContainer {
-  width: 50%;
-  margin: 10px auto;
-  border-radius: 4px;
-  box-shadow: 0px 0px 8px #ccc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
+.btnmore{
+    padding: 10px 0px 10px 0px;
+    display: block;
+    background: #7158e2;
+    width: 100%;
+    color: #fff !important;
+    overflow: hidden;
+    border-radius: 0px 0px 6px 6px;
 }
 
-.input {
-  width: 45%;
-  margin: 10px auto;
-  border: none;
-  border-radius: 4px;
-  height: 20px;
-  padding: 15px 48px;
-  background-color: #ffffff;
-  transition: all 0.2s ease;
-  direction: rtl;
-  box-shadow: 0px 0px 8px #ccc;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'iransanslight';
+.btnmore a {
+    color: #fff !important;
 }
-
-.input:focus {
-  outline: none;
-  border-color: white;
-  background: white;
-  box-shadow: rgba(74, 74, 74, 0.24) 0px 3px 8px;
-}
-
- 
-

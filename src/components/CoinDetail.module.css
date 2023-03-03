@@ -1,0 +1,117 @@
+.container {
+    width: 70%;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+}
+.contentback{
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    height: fit-content;
+    box-shadow: 0px 0px 8px #ccc;
+    margin-top: 1rem;
+    
+}
+
+.contentback h6 {
+    text-align: center;
+    font-family: 'iransanscoo';
+    color: #7158e2;
+    margin: 0px;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.contentback span {
+    color: #a3a5a8;
+    font-family: 'iransanscoo';
+}
+
+
+.contentback p {
+    color: #000000;
+    font-family: 'iransanscoo';
+
+}
+
+
+.boxsinglecointitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.rightbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    direction: rtl;
+}
+.rightbox img {
+    width: 65px;
+}
+
+.rightbox h2 {
+    text-align: right;
+    font-family: 'iransanscoo';
+    color: #484848;
+    margin: 0px 12px;
+    font-size: 2rem;
+    
+}
+.rightbox p {
+    color: #bbb;
+    font-size: 2rem;
+
+}
+.leftbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.leftbox p {
+    color: #484848;
+    font-size:2rem; 
+
+}
+
+ 
+
+h3 {
+    text-align: right;
+    font-family: 'iransanscoo';
+    color: #7158e2;
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+}
+
+.headerline {
+    color: #333;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: right;
+}
+
+.headerline span {
+    border-bottom: 4px solid #b1a1f7;
+    font-family: 'iransansmedium';
+    padding: 10px;
+    text-align: right;
+    color: #7158e2;
+}
+
+.headerline p {
+    color: #444;
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.contentboxdetaile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -45,3 +45,13 @@ code {
 a {
   text-decoration: none;
 }
+
+.container{
+  width: 70%;
+  /* min-height: 100vh; */
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,p,a,span,label{
+  direction: rtl;
+}

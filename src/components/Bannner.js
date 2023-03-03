@@ -1,34 +1,28 @@
 import React from 'react';
 import styles from './Banner.module.css';
-<<<<<<< HEAD
-import banner from '../images/slider-1.jpg';
-=======
-import banner from '../images/banner.jpg';
->>>>>>> 07bd1a7 (first commit)
+import banner1 from '../images/jumbotron.3ceb851.svg';
+import banner from '../images/header-background.svg';
+import { Link } from 'react-router-dom';
 
 const Bannner = () => {
     return (
      
         <div className={styles.contaner}>
-
      
             <div className={styles.bannerbox}>
+            {/* <img className='banner' src={banner} alt='baneer' /> */}
             <img className='banner' src={banner} alt='baneer' />
             </div>
-<<<<<<< HEAD
-            {/* <div className={styles.textContainer}>
-=======
             <div className={styles.textContainer}>
->>>>>>> 07bd1a7 (first commit)
-                <h1>فروشگاه</h1>
-                <p>
-                    فروشگاهی به وسعت <span>ایران زمین!</span>
+                <h1>رمزکده</h1>
+                <p>خرید و فروش 
+                    <> امن </>
+                    {/* <span> امن </span> */}
+                    بیت‌کوین و ارزهای دیجیتال
                     </p>
-<<<<<<< HEAD
-            </div> */}
-=======
+                    <Link to='/signUp' className={styles.signUpbtn}>ثبت نام</Link>
+                    <Link to='/login' >ورود</Link>
             </div>
->>>>>>> 07bd1a7 (first commit)
          
         </div>
          

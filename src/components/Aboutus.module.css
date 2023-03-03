@@ -1,0 +1,9 @@
+.contentback{
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    height: fit-content;
+    box-shadow: 0px 0px 8px #ccc;
+    margin-top: 1rem;
+}

@@ -1,22 +1,27 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import style from '../shared/Navbar.module.css';
+import React from 'react';
+import styles from '../shared/Navbar.module.css';
+import Logo from '../../images/c1.jpg';
+import {Link } from 'react-router-dom';
 
-// Context
- 
-// Icons
-
-//component
-import Landing from '../Landing';
- 
 
 const Navbar = () => {
     return (
-        <div className={style.container}>
-            <div className={style.title}>
-                <Link to='/Landing'>CoinMarket</Link>
+        <header className={styles.header}>
+            <div className={styles.listContainer}>
+                <ul className={styles.list}>
+                   <Link to="/home"><li>صفحه اصلی</li></Link>
+                   <Link to="/coins"><li>رمزارزها</li></Link>
+                   <Link to="/products"><li>راهنمای استفاده</li></Link>
+                   <Link to="/aboutus" ><li>درباره ما</li></Link>  
+                </ul>
             </div>
-        </div>
+            <div className={styles.logo}>
+                {/* <img className={styles.logo} src={Logo} alt="logo"/> */}
+                <Link to="/"><li className={styles.textlogo}>رمزکده</li></Link>
+            </div>
+
+            
+        </header>
     );
 };
 

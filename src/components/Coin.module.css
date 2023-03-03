@@ -22,7 +22,7 @@
 .name {
   width: 140px;
   font-size: 20px;
-  margin-right: 15px;
+  /* margin-right: 15px; */
   text-align: right;
   font-weight: bold;
   color: #333333;
@@ -43,35 +43,44 @@
 .greenPriceChange,
 .redPriceChange {
   width: 100px;
-  text-align: left;
+  text-align: text;
   font-weight: bold;
   font-family: iransansmedium;
   font-size: 14px;
+  direction: ltr;
+  color: #fff;
 }
 
 .redPriceChange {
-  color: rgb(255, 38, 38);
+    background: #ffecee;
+    color: #f26672;
+    border-radius: 6px;
+    width: 6%;
+    padding: 2px 2px;
 }
 
 .greenPriceChange {
-  color: rgb(0, 204, 0);
+  background: #dcf8f7;
+  color: #15d1c6;
+  border-radius: 4px;
+  width: 6%;
 }
 
 
-.container a {
+.btnprice {
   text-decoration: none;
   padding: 10px 20px;
   background: rgb(230, 232, 234);
   border-radius: 4px;
   color: #333;
   font-weight: 500;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   text-align: center;
   font-family: 'iransansmedium';
   font-size: 16px;
 }
 
-.container a:hover {
-  background: #3246fc ;
+.btnprice:hover {
+  background: #7158e2 ;
   color: #fff;
 }
