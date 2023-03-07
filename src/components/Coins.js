@@ -5,6 +5,7 @@ import { getCoin } from '../services/api';
 //components
 import Loader from './Loader';
 import Coin from './Coin';
+import SkeletonCoins from './skeletons/SkeletonCoins'
 // Styles
 import styles from "./Coins.module.css";
 
@@ -44,6 +45,7 @@ const Coins = () => {
                 <input className={styles.input} type="text" placeholder="جستجو..." 
                 value={search} onChange={searchHandeler} />
             </div>
+
             {
                 coins.length ? // if length 
 
@@ -63,7 +65,8 @@ const Coins = () => {
                     }
                 </div> : // else
 
-                    <Loader />          
+    <>  {  [1,2,3,4,5,6,7,8,9,10].map((n) => <SkeletonCoins type="title" key={n} />) } </>        
+
             }
        </div>
     </>

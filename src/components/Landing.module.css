@@ -1,7 +1,7 @@
 .btnmore{
     padding: 10px 0px 10px 0px;
     display: block;
-    background: #7158e2;
+    background: #A1DC23;
     width: 100%;
     color: #fff !important;
     overflow: hidden;
@@ -9,5 +9,5 @@
 }
 
 .btnmore a {
-    color: #fff !important;
+    color: #333 !important;
 }

@@ -31,7 +31,7 @@ const CoinDetail = (props) => {
  
      return (
         <>
-            <div className='container'> 
+            <div className={styles.container}> 
 
 
             <div className={styles.boxsinglecointitle}>
@@ -68,7 +68,7 @@ const CoinDetail = (props) => {
                 </div>
 
            </div>
-           <div className='container'>  
+           <div className={styles.container}>  
                 <h3>سوالات متداول</h3>
                 <div className={styles.contentback}>  
                     <div className={styles.headerline}>

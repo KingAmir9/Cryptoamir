@@ -5,6 +5,7 @@ import Bannners from './Bannner'
 import Coin from './Coin';
 import Logos from './Logos'
 import Loader from './Loader';
+import SkeletonCoins from './skeletons/SkeletonCoins'
 
 // Styles
 import styles from "./Coins.module.css";
@@ -34,9 +35,9 @@ const Landing = () => {
     return (
         <>
            <Bannners/>
-                <div className={styles.container}  >
+                <div className={styles.container}>
             {
-                 coins.length ?  // if length 
+                coins.length ?  // if length 
                 <div className={styles.coinContainer} >
                     {
                         searchedCoins.map(coin => <Coin 
@@ -44,15 +45,17 @@ const Landing = () => {
                             name_fa={coin.currency1.title_fa} 
                             name={coin.currency1.title} 
                             image={coin.currency1.image}
-                            // symbol={coin.code}
                             price={coin.price_info.price}
-                            // marketCap={coin.market_cap}
                             priceChange24={coin.price_info.change} 
                             /> ) // Coin component props
                     }
                     <div className={styles1.btnmore}><Link to='/coins'>نمایش همه بازار</Link></div>
                 </div>   : // else
-              <Loader />     
+            
+            
+                 // Loding...   
+                [1,2,3,4,5,6].map((n) => <SkeletonCoins type="title" key={n} />)
+               
             }
           </div>
         </>
