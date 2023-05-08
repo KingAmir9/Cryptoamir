@@ -28,7 +28,7 @@ function App() {
             <Route path="/signUp" component={SignUp} />
             <Redirect to="/home" />
       </Switch>
-      <Footer/>
+      {/* <Footer/> */}
   </div>
   );
 }

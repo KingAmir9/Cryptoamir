@@ -6,6 +6,8 @@ import Coin from './Coin';
 import Logos from './Logos'
 import Loader from './Loader';
 import SkeletonCoins from './skeletons/SkeletonCoins'
+import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
+
 
 // Styles
 import styles from "./Coins.module.css";
@@ -35,6 +37,7 @@ const Landing = () => {
     return (
         <>
            <Bannners/>
+
                 <div className={styles.container}>
             {
                 coins.length ?  // if length 

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 import { getCoin } from '../services/api';
+import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
+
 
 // Styles
 import styles from "./CoinDetail.module.css";
@@ -50,6 +52,7 @@ const CoinDetail = (props) => {
                
                 <div className={styles.contentback}>  
 
+
                         <h6>اطلاعات بازار رمزکده</h6>
                         <div className={styles.contentboxdetaile}>
                             <div>
@@ -64,7 +67,11 @@ const CoinDetail = (props) => {
                                 <span> بالاترین قیمت دیروز </span> 
                                 <p> {parseInt(coin.price_info?.max).toLocaleString()} </p>
                             </div>
-                        </div>    
+
+                        </div> 
+           <AdvancedRealTimeChart theme="lite" ColorTheme="lite" width="100%" symbol={coin.trading_view_symbol} ></AdvancedRealTimeChart>
+
+
                 </div>
 
            </div>
@@ -80,9 +87,11 @@ const CoinDetail = (props) => {
                         <span> آیا برای نگهداری ارزهای دیجیتال باید هزینه کنم؟ </span>
                         <p>تنها یک کیف‌پول به عنوان نگهدارنده بیت‌کوین، ارسال کننده و همچنین دریافت کننده آن نیاز است. از انواع این کیف‌پول‌ها می‌توان به نمونه‌هایی مانند کیف‌پول موبایل، دسکتاپ، تحت‌وب و سخت‌‌افزاری اشاره کرد. اگر از کیف‌پول موبایل، دسکتاپ، تحت‌وب و کاغذی استفاده کنید نیازی به پرداخت هزینه نیست اما کیف‌پول سخت‌افزاری باید خریداری شود و قطعا هزینه‌ خواهد داشت.</p>                    
                     </div>
+
                 </div>
 
            </div>
+
         </>
     );
 };
